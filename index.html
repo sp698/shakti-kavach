@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071b4a">
+<meta name="description" content="Shakti Kavach — prayers, mantras, meditation and practical safety tools.">
+<link rel="manifest" href="manifest.webmanifest">
+<title>शक्ति कवच | Shakti Kavach</title>
+<style>
+:root{--navy:#071b4a;--gold:#ffd66b;--cream:#fff8e8;--muted:#b9c8e7}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#254c91 0,#0a2458 42%,#06143a 100%);color:var(--cream);font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif}
+header{padding:18px 18px 12px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#071b4aeb;backdrop-filter:blur(12px);z-index:4;border-bottom:1px solid #ffffff18}
+.brand{font-weight:850;font-size:22px;letter-spacing:.2px}.brand small{display:block;color:var(--gold);font-size:11px;font-weight:600;letter-spacing:1.3px}
+button,select{font:inherit}button{cursor:pointer;border:0}
+.lang{background:#17396f;color:white;border:1px solid #6e8fbd;border-radius:20px;padding:8px 12px}
+main{max-width:720px;margin:auto;padding:16px 16px 100px}
+.hero{background:linear-gradient(135deg,#102d67,#081943);border:1px solid #e7b94d88;border-radius:24px;padding:24px 18px;text-align:center;box-shadow:0 12px 35px #0005;overflow:hidden}
+.badge{font-size:42px}.hero h1{font-size:27px;margin:8px 0;color:var(--gold)}.hero p{margin:0;color:#dce7ff;line-height:1.55}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.tile{min-height:112px;text-align:left;padding:16px;border-radius:18px;color:white;background:linear-gradient(145deg,#194a91,#10285d);border:1px solid #80a9e766;box-shadow:0 6px 18px #0003}
+.tile .ico{font-size:27px}.tile strong{display:block;margin-top:7px;font-size:16px}.tile span{display:block;color:#cbdcff;font-size:12px;margin-top:3px}
+.panel{background:#fff9ed;color:#14244a;border-radius:20px;padding:18px;margin:14px 0;box-shadow:0 8px 24px #0003}
+.panel h2{margin:0 0 10px;font-size:19px;color:#17366c}.panel p{line-height:1.6;margin:8px 0}
+.primary{background:linear-gradient(135deg,#ffdf82,#efa92e);color:#241500;font-weight:800;border-radius:14px;padding:12px 16px;margin:5px 5px 5px 0}
+.secondary{background:#e6edfa;color:#153467;border:1px solid #c5d3ee;border-radius:12px;padding:10px 13px;margin:5px 5px 5px 0}
+.call{background:#a91e2b;color:white;font-weight:800;border-radius:14px;padding:13px 16px}
+.small{font-size:12px;color:#53627e}.hidden{display:none!important}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:#061638f2;border-top:1px solid #ffffff25;display:flex;justify-content:space-around;padding:10px 4px calc(10px + env(safe-area-inset-bottom));z-index:5}
+.bottom button{background:none;color:#d6e3ff;font-size:11px}.bottom b{display:block;font-size:20px;margin-bottom:2px}
+textarea,input{width:100%;padding:12px;border:1px solid #c7d3e9;border-radius:12px;font:inherit}
+hr{border:0;border-top:1px solid #dce4f1;margin:14px 0}
+footer{text-align:center;color:#aebfdf;font-size:12px;padding:20px}
+@media(min-width:560px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:32px}}
+</style>
+</head>
+<body>
+<header><div class="brand">🛡️ शक्ति कवच <small>PEACE • FAITH • POSITIVITY</small></div><button class="lang" id="langBtn">English</button></header>
+<main>
+<section class="hero">
+<div class="badge">ॐ 🙏</div>
+<h1 data-hi="मन की शांति, आस्था का सहारा" data-en="Peace of mind, strength in faith">मन की शांति, आस्था का सहारा</h1>
+<p data-hi="प्रार्थना, मंत्र, ध्यान और रोज़मर्रा की सुरक्षा के उपयोगी साधन — एक ही जगह।" data-en="Prayers, mantras, meditation and practical everyday safety tools — in one place.">प्रार्थना, मंत्र, ध्यान और रोज़मर्रा की सुरक्षा के उपयोगी साधन — एक ही जगह।</p>
+</section>
+<div class="grid">
+<button class="tile" data-page="chalisa"><div class="ico">📖</div><strong data-hi="हनुमान चालीसा" data-en="Hanuman Chalisa">हनुमान चालीसा</strong><span data-hi="पाठ और सुनने के विकल्प" data-en="Read and listening options">पाठ और सुनने के विकल्प</span></button>
+<button class="tile" data-page="mantra"><div class="ico">🕉️</div><strong data-hi="मंत्र एवं स्तोत्र" data-en="Mantras & Stotras">मंत्र एवं स्तोत्र</strong><span data-hi="शांत मन से जप करें" data-en="Chant mindfully">शांत मन से जप करें</span></button>
+<button class="tile" data-page="meditate"><div class="ico">🧘</div><strong data-hi="ध्यान एवं शांति" data-en="Meditation & Calm">ध्यान एवं शांति</strong><span data-hi="2 मिनट का श्वास अभ्यास" data-en="A 2-minute breathing exercise">2 मिनट का श्वास अभ्यास</span></button>
+<button class="tile" data-page="belief"><div class="ico">🧿</div><strong data-hi="नज़र से जुड़े पारंपरिक उपाय" data-en="Traditional Evil-Eye Customs">नज़र से जुड़े पारंपरिक उपाय</strong><span data-hi="लोक-परंपराओं की जानकारी" data-en="Learn about folk traditions">लोक-परंपराओं की जानकारी</span></button>
+<button class="tile" data-page="prayer"><div class="ico">🙏</div><strong data-hi="आज की प्रार्थना" data-en="Daily Prayer">आज की प्रार्थना</strong><span data-hi="दिन की शुरुआत सकारात्मकता से" data-en="Start your day positively">दिन की शुरुआत सकारात्मकता से</span></button>
+<button class="tile" data-page="safety"><div class="ico">🆘</div><strong data-hi="व्यावहारिक सुरक्षा" data-en="Practical Safety">व्यावहारिक सुरक्षा</strong><span data-hi="आपातकालीन मदद और संपर्क" data-en="Emergency help and contacts">आपातकालीन मदद और संपर्क</span></button>
+</div>
+<section id="content" class="panel">
+<h2 data-hi="आज का सकारात्मक विचार" data-en="Today's positive thought">आज का सकारात्मक विचार</h2>
+<p data-hi="“साहस, करुणा और समझदारी — यही हमारी असली शक्ति है।”" data-en="“Courage, compassion and clear thinking are our true strengths.”">“साहस, करुणा और समझदारी — यही हमारी असली शक्ति है।”</p>
+<button class="secondary" id="newThought" data-hi="दूसरा विचार" data-en="Another thought">दूसरा विचार</button>
+</section>
+<section class="panel">
+<h2 data-hi="प्रीमियम सदस्यता" data-en="Premium membership">प्रीमियम सदस्यता</h2>
+<p data-hi="आगे चलकर विशेष ऑडियो, ऑफलाइन पाठ और अतिरिक्त ध्यान सत्र जोड़े जा सकते हैं। अभी यह डेमो है — कोई भुगतान न करें।" data-en="Special audio, offline reading and extra meditation sessions can be added later. This is a demo — no payment is collected.">आगे चलकर विशेष ऑडियो, ऑफलाइन पाठ और अतिरिक्त ध्यान सत्र जोड़े जा सकते हैं। अभी यह डेमो है — कोई भुगतान न करें।</p>
+</section>
+<footer>|| सर्वे भवन्तु सुखिनः ||<br>यह ऐप आध्यात्मिक जानकारी और सामान्य सहायता देता है; अलौकिक सुरक्षा की गारंटी नहीं।</footer>
+</main>
+<nav class="bottom"><button onclick="home()"><b>⌂</b><span data-hi="होम" data-en="Home">होम</span></button><button onclick="openPage('mantra')"><b>ॐ</b><span data-hi="मंत्र" data-en="Mantras">मंत्र</span></button><button onclick="openPage('meditate')"><b>☯</b><span data-hi="ध्यान" data-en="Calm">ध्यान</span></button><button onclick="openPage('safety')"><b>🆘</b><span data-hi="मदद" data-en="Help">मदद</span></button></nav>
+<script>
+let lang='hi';
+const pages={
+chalisa:{hi:['हनुमान चालीसा','श्री गुरु चरन सरोज रज, निज मनु मुकुरु सुधारि।','यह शुरुआती पंक्ति है। पूरा पाठ जोड़ने के लिए सत्यापित, उचित स्रोत से पाठ/ऑडियो शामिल करें।'],en:['Hanuman Chalisa','After cleansing the mirror of my mind with the dust of the Guru’s lotus feet…','This is a short opening excerpt. Add the complete text/audio from a verified, permitted source.']},
+mantra:{hi:['मंत्र एवं स्तोत्र','ॐ नमः शिवाय','श्री राम जय राम जय जय राम','गायत्री मंत्र का पाठ श्रद्धा और शांति से करें।'],en:['Mantras & Stotras','Om Namah Shivaya','Shri Ram Jai Ram Jai Jai Ram','Chant at a comfortable pace, with a calm mind.']},
+meditate:{hi:['2 मिनट का श्वास अभ्यास','आराम से बैठें। 4 गिनती में सांस लें और 6 गिनती में धीरे छोड़ें। इसे 2 मिनट दोहराएँ। चक्कर आए तो सामान्य सांस लें।','शुरू करें'],en:['2-minute breathing exercise','Sit comfortably. Breathe in for 4 counts and gently out for 6. Repeat for 2 minutes. Return to normal breathing if dizzy.','Start']},
+belief:{hi:['नज़र से जुड़े पारंपरिक विश्वास','भारत के कई परिवारों में नज़र से बचाव के लिए प्रार्थना, काला टीका या नमक-मिर्च जैसी लोक-परंपराएँ प्रचलित हैं। ये सांस्कृतिक मान्यताएँ हैं; इनके प्रभाव का वैज्ञानिक प्रमाण नहीं है।','डर या परेशानी हो तो किसी भरोसेमंद व्यक्ति से बात करें।'],en:['Traditional beliefs about the evil eye','Some families use prayers, a small kajal mark or salt-and-chilli rituals as folk customs. These are cultural beliefs; there is no scientific proof that they prevent supernatural harm.','If you feel frightened or distressed, talk with someone you trust.']},
+prayer:{hi:['आज की प्रार्थना','हे ईश्वर, मुझे आज धैर्य, विवेक, करुणा और सही निर्णय लेने की शक्ति दें। मेरे परिवार और सभी लोगों का कल्याण हो।','ॐ शान्तिः शान्तिः शान्तिः'],en:['Daily prayer','May I have patience, wisdom, compassion and the strength to make good decisions today. May my family and all people be well.','Om Shanti, Shanti, Shanti']},
+safety:{hi:['व्यावहारिक सुरक्षा','यदि आप या कोई अन्य व्यक्ति तत्काल खतरे में है, भारत में 112 पर कॉल करें। अपने भरोसेमंद परिवारजन/मित्र को भी संपर्क करें।','आपातकाल में कॉल करने से पहले सुनिश्चित करें कि ऐसा करना सुरक्षित है।'],en:['Practical safety','If you or someone else is in immediate danger in India, call 112. You can also contact a trusted family member or friend.','Only make a call when it is safe to do so.']}
+};
+function home(){document.getElementById('content').innerHTML='<h2>'+ (lang==='hi'?'आज का सकारात्मक विचार':'Today’s positive thought')+'</h2><p>'+ (lang==='hi'?'“साहस, करुणा और समझदारी — यही हमारी असली शक्ति है।”':'“Courage, compassion and clear thinking are our true strengths.”')+'</p><button class="secondary" id="newThought">'+(lang==='hi'?'दूसरा विचार':'Another thought')+'</button>';document.getElementById('newThought').onclick=thought}
+function thought(){let a=lang==='hi'?['हर कठिन दिन के बाद नई सुबह आती है।','आपकी शांति और सुरक्षा सबसे महत्वपूर्ण है।','छोटे अच्छे कदम भी बड़ा बदलाव लाते हैं।']:['A new morning follows every difficult day.','Your peace and safety matter most.','Small positive steps can create big change.'];document.querySelector('#content p').textContent=a[Math.floor(Math.random()*a.length)]}
+function openPage(key){let p=pages[key],v=p[lang==='hi'?0:1];let html='<h2>'+v[0]+'</h2>';for(let i=1;i<v.length;i++)html+='<p>'+v[i]+'</p>';if(key==='meditate')html+='<button class="primary" onclick="breath()">'+(lang==='hi'?'अभ्यास शुरू करें':'Start exercise')+'</button><p id="breathStatus"></p>';if(key==='safety')html+='<a href="tel:112"><button class="call">'+(lang==='hi'?'112 पर कॉल करें':'Call 112')+'</button></a>';if(key==='mantra'||key==='prayer')html+='<button class="secondary" onclick="speakText()">'+(lang==='hi'?'🔊 सुनें':'🔊 Listen')+'</button>';document.getElementById('content').innerHTML=html;document.getElementById('content').scrollIntoView({behavior:'smooth'})}
+function speakText(){let t=document.querySelector('#content').innerText;if('speechSynthesis'in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang=lang==='hi'?'hi-IN':'en-IN';speechSynthesis.speak(u)}else alert(lang==='hi'?'इस डिवाइस पर आवाज़ सुविधा उपलब्ध नहीं है।':'Speech is not available on this device.')}
+function breath(){let el=document.getElementById('breathStatus'),n=0;let phases=lang==='hi'?['4 गिनती में सांस लें…','6 गिनती में धीरे छोड़ें…']:['Breathe in for 4 counts…','Breathe out gently for 6 counts…'];function step(){if(n>=12){el.textContent=lang==='hi'?'अच्छा किया। अब सामान्य सांस लें।':'Well done. Return to normal breathing.';return}el.textContent=phases[n%2];n++;setTimeout(step,n%2?4000:6000)}step()}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>openPage(b.dataset.page)));
+document.getElementById('newThought').onclick=thought;
+document.getElementById('langBtn').onclick=()=>{lang=lang==='hi'?'en':'hi';document.documentElement.lang=lang;document.getElementById('langBtn').textContent=lang==='hi'?'English':'हिंदी';document.querySelectorAll('[data-hi]').forEach(e=>e.textContent=e.dataset[lang]);home()};
+if('serviceWorker'in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>

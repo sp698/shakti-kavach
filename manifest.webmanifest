@@ -1,0 +1,9 @@
+{
+  "name": "Shakti Kavach",
+  "short_name": "Shakti Kavach",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#071b4a",
+  "theme_color": "#071b4a",
+  "description": "Prayers, mantras, meditation and practical safety tools."
+}
